@@ -34,21 +34,21 @@ DisableWAPPush                  # EnableWAPPush
 # DisableRecentFiles            # EnableRecentFiles
 
 ### UWP Privacy Tweaks ###
-DisableUWPBackgroundApps        # EnableUWPBackgroundApps
-# DisableUWPVoiceActivation     # EnableUWPVoiceActivation
-# DisableUWPNotifications       # EnableUWPNotifications
-# DisableUWPAccountInfo         # EnableUWPAccountInfo
-# DisableUWPContacts            # EnableUWPContacts
-# DisableUWPCalendar            # EnableUWPCalendar
-# DisableUWPPhoneCalls          # EnableUWPPhoneCalls
-# DisableUWPCallHistory         # EnableUWPCallHistory
-# DisableUWPEmail               # EnableUWPEmail
-# DisableUWPTasks               # EnableUWPTasks
-# DisableUWPMessaging           # EnableUWPMessaging
-# DisableUWPRadios              # EnableUWPRadios
-# DisableUWPOtherDevices        # EnableUWPOtherDevices
-# DisableUWPDiagInfo            # EnableUWPDiagInfo
-# DisableUWPFileSystem          # EnableUWPFileSystem
+# DisableUWPBackgroundApps        # EnableUWPBackgroundApps
+DisableUWPVoiceActivation     # EnableUWPVoiceActivation
+DisableUWPNotifications       # EnableUWPNotifications
+DisableUWPAccountInfo         # EnableUWPAccountInfo
+DisableUWPContacts            # EnableUWPContacts
+DisableUWPCalendar            # EnableUWPCalendar
+DisableUWPPhoneCalls          # EnableUWPPhoneCalls
+DisableUWPCallHistory         # EnableUWPCallHistory
+DisableUWPEmail               # EnableUWPEmail
+DisableUWPTasks               # EnableUWPTasks
+DisableUWPMessaging           # EnableUWPMessaging
+DisableUWPRadios              # EnableUWPRadios
+DisableUWPOtherDevices        # EnableUWPOtherDevices
+DisableUWPDiagInfo            # EnableUWPDiagInfo
+DisableUWPFileSystem          # EnableUWPFileSystem
 # DisableUWPSwapFile            # EnableUWPSwapFile
 
 ### Security Tweaks ###
@@ -59,9 +59,9 @@ DisableAdminShares              # EnableAdminShares
 # HideDefenderTrayIcon          # ShowDefenderTrayIcon
 # DisableDefender               # EnableDefender
 # DisableDefenderCloud          # EnableDefenderCloud
-# EnableCtrldFolderAccess       # DisableCtrldFolderAccess
-# EnableCIMemoryIntegrity       # DisableCIMemoryIntegrity
-# EnableDefenderAppGuard        # DisableDefenderAppGuard
+# EnableCtrldFolderAccess       # DisableCtrldFolderAccess # NOTE: turned on separately
+# EnableCIMemoryIntegrity       # DisableCIMemoryIntegrity # NOTE: not compatible with Logitech Drivers
+# EnableDefenderAppGuard        # DisableDefenderAppGuard # NOTE: installed manually
 # HideAccountProtectionWarn       # ShowAccountProtectionWarn
 # DisableDownloadBlocking       # EnableDownloadBlocking
 DisableScriptHost               # EnableScriptHost
@@ -73,7 +73,7 @@ EnableDotNetStrongCrypto        # DisableDotNetStrongCrypto
 # SetDEPOptOut                    # SetDEPOptIn
 
 ### Network Tweaks ###
-# SetCurrentNetworkPrivate        # SetCurrentNetworkPublic
+SetCurrentNetworkPrivate        # SetCurrentNetworkPublic
 # SetUnknownNetworksPrivate     # SetUnknownNetworksPublic
 # DisableNetDevicesAutoInst     # EnableNetDevicesAutoInst
 # DisableHomeGroups             # EnableHomeGroups
@@ -142,14 +142,14 @@ DisableSearchAppInStore         # EnableSearchAppInStore
 DisableNewAppPrompt             # EnableNewAppPrompt
 # HideRecentlyAddedApps         # ShowRecentlyAddedApps
 # HideMostUsedApps              # ShowMostUsedApps
-# SetWinXMenuPowerShell         # SetWinXMenuCmd
+# SetWinXMenuPowerShell         SetWinXMenuCmd
 # SetControlPanelSmallIcons     # SetControlPanelLargeIcons     # SetControlPanelCategories
 DisableShortcutInName           # EnableShortcutInName
 # HideShortcutArrow             # ShowShortcutArrow
 # SetVisualFXPerformance          # SetVisualFXAppearance
 EnableTitleBarColor           # DisableTitleBarColor
-# SetAppsDarkMode               # SetAppsLightMode
-# SetSystemLightMode            # SetSystemDarkMode
+SetAppsDarkMode               # SetAppsLightMode
+# SetSystemLightMode            SetSystemDarkMode
 # AddENKeyboard                 # RemoveENKeyboard
 EnableNumlock                 # DisableNumlock
 DisableEnhPointerPrecision    # EnableEnhPointerPrecision
@@ -168,7 +168,7 @@ ShowHiddenFiles                 # HideHiddenFiles
 # ShowFolderMergeConflicts      # HideFolderMergeConflicts
 EnableNavPaneExpand             # DisableNavPaneExpand
 # ShowNavPaneAllFolders         # HideNavPaneAllFolders
-# ShowNavPaneLibraries          # HideNavPaneLibraries
+# ShowNavPaneLibraries          HideNavPaneLibraries
 # EnableFldrSeparateProcess     # DisableFldrSeparateProcess
 # EnableRestoreFldrWindows      # DisableRestoreFldrWindows
 # ShowEncCompFilesColor         # HideEncCompFilesColor
@@ -191,7 +191,7 @@ HideDocumentsFromThisPC         # ShowDocumentsInThisPC
 # HideDocumentsFromExplorer     # ShowDocumentsInExplorer
 HideDownloadsFromThisPC         # ShowDownloadsInThisPC
 # HideDownloadsFromExplorer     # ShowDownloadsInExplorer
-# HideMusicFromThisPC             # ShowMusicInThisPC
+HideMusicFromThisPC             # ShowMusicInThisPC
 # HideMusicFromExplorer         # ShowMusicInExplorer
 HidePicturesFromThisPC          # ShowPicturesInThisPC
 # HidePicturesFromExplorer      # ShowPicturesInExplorer
@@ -199,7 +199,7 @@ HideVideosFromThisPC            # ShowVideosInThisPC
 # HideVideosFromExplorer        # ShowVideosInExplorer
 Hide3DObjectsFromThisPC         # Show3DObjectsInThisPC
 # Hide3DObjectsFromExplorer     # Show3DObjectsInExplorer
-# HideNetworkFromExplorer       # ShowNetworkInExplorer
+HideNetworkFromExplorer       # ShowNetworkInExplorer
 HideIncludeInLibraryMenu      # ShowIncludeInLibraryMenu
 HideGiveAccessToMenu          # ShowGiveAccessToMenu
 HideShareMenu                 # ShowShareMenu
@@ -221,15 +221,15 @@ DisableEdgeShortcutCreation     # EnableEdgeShortcutCreation
 DisableIEFirstRun               # EnableIEFirstRun
 DisableFirstLogonAnimation      # EnableFirstLogonAnimation
 DisableMediaSharing             # EnableMediaSharing
-# DisableMediaOnlineAccess      # EnableMediaOnlineAccess
+DisableMediaOnlineAccess      # EnableMediaOnlineAccess
 # EnableDeveloperMode           # DisableDeveloperMode
 UninstallMediaPlayer          # InstallMediaPlayer
 UninstallInternetExplorer     # InstallInternetExplorer
 UninstallWorkFolders          # InstallWorkFolders
-# UninstallHelloFace            # InstallHelloFace
-# UninstallMathRecognizer       # InstallMathRecognizer
+UninstallHelloFace            # InstallHelloFace
+UninstallMathRecognizer       # InstallMathRecognizer
 UninstallPowerShellV2         # InstallPowerShellV2
-# UninstallPowerShellISE        # InstallPowerShellISE
+UninstallPowerShellISE        # InstallPowerShellISE
 # InstallLinuxSubsystem         # UninstallLinuxSubsystem
 # InstallHyperV                 # UninstallHyperV
 # UninstallSSHClient            # InstallSSHClient
